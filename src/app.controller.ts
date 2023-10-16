@@ -1,14 +1,11 @@
 import {
   BadRequestException,
-  Body,
   Controller,
   Get,
   Param,
   ParseIntPipe,
-  Post,
 } from '@nestjs/common';
 import { AppService } from './app.service';
-import { CreateDto } from './dto/create.dto';
 
 @Controller()
 export class AppController {
@@ -22,12 +19,5 @@ export class AppController {
     }
     return id;
     // return this.appService.getHello();
-  }
-
-  // @UsePipes()
-  @Post('create')
-  create(@Body() dto: CreateDto) {
-    console.log('any');
-    return dto;
   }
 }
