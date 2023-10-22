@@ -1,3 +1,1 @@
-export class Flavor {
-
-}
+export class Flavor {}

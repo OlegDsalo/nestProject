@@ -1,4 +1,5 @@
-import { IsString } from 'class-validator';
+import { IsString } from "class-validator";
+import { FlavorEntity } from "./flavor.entity";
 
 export class Coffee {
   @IsString()
