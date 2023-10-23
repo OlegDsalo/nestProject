@@ -68,8 +68,8 @@ export class CoffeesService {
   }
 
   async recommendCoffee(coffee: CoffeeEntity) {
-    const queryRunner = this.connection.createQueryRunner();
-    const dataRunner = this.dataSource.createQueryRunner();
+    // const queryRunner = this.connection.createQueryRunner();
+    const queryRunner = this.dataSource.createQueryRunner();
     await queryRunner.connect();
     await queryRunner.startTransaction();
     try {

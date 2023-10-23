@@ -13,7 +13,7 @@ export class CoffeeEntity {
   id: string;
 
   @Column()
-  name: string;
+  title: string;
 
   @Column()
   brand: string;
